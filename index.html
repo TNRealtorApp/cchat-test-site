@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tennessee Time Travel</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Tennessee Time Travel — Tennessee, but anywhen.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- placeholder — workers will fill this in -->
-<h1>Tennessee Time Travel</h1>
-<p>Coming soon. (Or rather: <em>coming whenever you want it to.</em>)</p>
+  <header>
+    <h1>Tennessee Time Travel</h1>
+    <p>Vacation through any century of the Volunteer State — and (almost always) make it home for supper.</p>
+    <a href="#booking">Plan My Trip</a>
+  </header>
+
+  <main>
+    <section id="destinations" aria-labelledby="destinations-heading">
+      <h2 id="destinations-heading">Featured Destinations</h2>
+
+      <article>
+        <p><time>1796</time></p>
+        <h3>Pre-Statehood Frontier</h3>
+        <p>Stand in the room where Tennessee becomes the 16th state. Bring boots. Bring patience. Try not to mention the wheel.</p>
+        <p>Starting at $1,796</p>
+      </article>
+
+      <article>
+        <p><time>1864</time></p>
+        <h3>Civil War Nashville</h3>
+        <p>Tour the occupied city in chaperoned period attire. Strong opinions about the situation are politely discouraged.</p>
+        <p>Starting at $1,864</p>
+      </article>
+
+      <article>
+        <p><time>1925</time></p>
+        <h3>Roaring Tipton</h3>
+        <p>Catch a hot jazz combo and a cold root-beer float on the same Saturday night. Suspenders and chaperone provided.</p>
+        <p>Starting at $1,925</p>
+      </article>
+
+      <article>
+        <p><time>1956</time></p>
+        <h3>Memphis, Sun Records Era</h3>
+        <p>Stand outside 706 Union Avenue and pretend you're the next big thing. Hair-product allowance generously included.</p>
+        <p>Starting at $1,956</p>
+      </article>
+    </section>
+
+    <section id="how-it-works" aria-labelledby="how-it-works-heading">
+      <h2 id="how-it-works-heading">How It Works</h2>
+      <ol>
+        <li><strong>Pick your decade.</strong> Choose one of our four featured eras or request a custom departure (subject to causal review and a small paradox surcharge).</li>
+        <li><strong>Suit up at our Knoxville hub.</strong> Costume fitting, paperwork, and a brisk temporal-etiquette briefing. Please leave smartphones, opinions, and crypto behind.</li>
+        <li><strong>Step through.</strong> Three minutes of polite vertigo, then you're there. Pickup is automatic in seventy-two subjective hours, give or take a war.</li>
+      </ol>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Book Your Departure</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="traveler-name">Full name (this century)</label>
+          <input id="traveler-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="traveler-email">Email</label>
+          <input id="traveler-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="target-year">Target year</label>
+          <input id="target-year" name="target_year" type="number" min="1796" max="1999" step="1" placeholder="e.g. 1925" required>
+        </div>
+        <div>
+          <label for="party-size">Party size</label>
+          <input id="party-size" name="party_size" type="number" min="1" max="12" step="1" value="1" required>
+        </div>
+        <button type="submit">Reserve My Spot</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tennessee Time Travel is a satirical demonstration. No actual time travel. Closed-loop causality not guaranteed.</p>
+    <p>&copy; 1796–2099 Tennessee Time Travel Co. All paradoxes reserved.</p>
+  </footer>
 </body>
 </html>
